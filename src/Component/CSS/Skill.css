@@ -1,0 +1,12 @@
+.skill {
+    color: white;
+}
+.skill > * {
+    display: flex;
+}
+.skill .header {
+    border-right: solid 1px #e7e7e7;
+    display: flex;
+    width: 4rem;
+    padding: 3rem;
+}
