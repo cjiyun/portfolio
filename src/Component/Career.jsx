@@ -2,7 +2,7 @@ import { useState } from "react";
 import careers from "./Data/careers";
 import "./CSS/Career.css";
 
-function Carears() {
+function Careers() {
   const [index, setIndex] = useState(0);
   const contentChange = (event) => {
     setIndex(event.target.value);
@@ -19,4 +19,4 @@ function Carears() {
   );
 }
 
-export default Carears;
+export default Careers;

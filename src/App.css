@@ -2,94 +2,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
 
-body {
-  line-height: 1.5;
-  }
 .home{
-  background: url(../public/image/homeImg.gif);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  min-width: 100vw;
-  padding: 0;
-}
-nav {
-  display: table;
-  text-align: center;
-  font-size: 100%;
-  padding: 0 1rem;
+  line-height: 1.5;
+  background-color: rgb(32, 32, 32);
+  color: white;
 }
 main{
-  margin: 0 50px;
   font-size: 100%;
 }
-#index {
-  background: url(../public/image/homeImg.gif);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#info {
   display: flex;
   flex-direction: column;
-  min-height: 80vh;
-  min-width: 80vw;
   justify-content: center;
+  margin: 30px 0;
 }
-#index h1, #index h2 {
+#info > * {
+  margin: 20px auto;
+}
+#info h1, #info h2 {
   text-align: center;
-  color: white;
 }
-.AboutMe {
-  margin: 0 100px;
+.profile {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+.AboutMe, .Contact {
+  margin: 0 50px;
+}
+.AboutMe h3, .Contact h3 {
   text-align: center;
-  color: white;
+  border-bottom: solid 1px;
+  margin-top: 50px;
+  padding: 20px;
 }
-.AboutMe h3 {
-  border-bottom: solid 1px rgb(230, 255, 255);
-  margin: 50px 0;
-  padding: 20px 0;
-}
-.info-profile {
-  object-fit: contain;
-}
-.AboutMe-content {
+.AboutMe-item, .Contact-container {
   display: flex;
   flex-direction: row;
+  margin: 50px 0;
 }
-.AboutMe-content > * {
-  margin: 0 1rem;
-  padding: 1rem;
+.Contact-container {
+  justify-content: center;
+}
+.Contact-item {
+  text-align: center;
+}
+.Contact-item p {
+  margin: 20px;
 }
 footer {
   text-align: center;
   background-color: gray;
   color: white;
   font-size: 100%;
+  margin-top: auto;
 }
-.menu {
-  padding: 20px 0;
-  text-decoration: none;
-  color: #e7e7e7;
-  display: table-cell;
-  width:450px;
-  font-size: 100%;
+.main-container {
+    margin-left: 260px; /* 사이드바가 열려있을 때 */
+    transition: all 0.5s ease;
+    padding: 20px;
 }
-.menu:hover, .active { 
-  border-bottom: 5px solid white;
-  color: white;
+
+/* 사이드바가 닫혀있을 때 */
+.sidebar.close ~ .main-container {
+    margin-left: 78px;
 }
-button {
-  padding: 10px 20px;
-  margin: 20px; 
-  font-size: 100%;
-  cursor: pointer;
-  transition-duration: 1s;
+@media screen and (max-width: 480px) {
+  .main-content {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
-button:hover {
-  background-color: orange;
-  color: white;
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .main-content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+   .main-content {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+@media screen and (min-width: 1281px) {
+  .main-content {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
 }

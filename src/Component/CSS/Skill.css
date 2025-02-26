@@ -1,12 +1,43 @@
 .skill {
-    color: white;
-}
-.skill > * {
     display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    min-height: 100vh;
 }
-.skill .header {
-    border-right: solid 1px #e7e7e7;
+
+.frontend-container, .backend-container {
+    position: relative;
     display: flex;
-    width: 4rem;
-    padding: 3rem;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    padding-left: 0;
+    background-color: #343434;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #585858;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.skill-details {
+    padding-top: 10px;
+}
+
+.details ul {
+    padding: 0;
+    margin-left: 50px;
+}
+
+.details li {
+    padding: 12px 0;
+    font-size: 18px;
+    color: #fff;
 }

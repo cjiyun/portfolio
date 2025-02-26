@@ -1,10 +1,41 @@
 #project{
-  margin-left: 500px;
+  color: white;
 }
-fieldset {
-  width: 2000px;
-  margin-left: 50px;
-  font-size: 1.5em;
+.project-img {
+  display: block;
+  margin: 50px 0;
+  background-color: #343434;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px #585858;
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+}
+.project-title {
+  margin-top: 50px;
+}
+
+.project-portfolio {
+  display: flex;
+  flex-direction: column;
+}
+.project-item h3 {
+  border-bottom: solid 1px;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+.project-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+.project-content {
+  margin: 50px 0;
+}
+.project-content li {
+  padding-bottom: 20px;
 }
 .login {
   color: white;

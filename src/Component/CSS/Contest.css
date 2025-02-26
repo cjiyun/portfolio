@@ -1,8 +1,45 @@
 #contest{
-  margin-left: 500px;
+  color: white;
 }
-fieldset {
-  width: 2000px;
-  margin-left: 50px;
-  font-size: 1.5em;
+.contest-img {
+  display: block;
+  margin: 50px 0;
+  border: 1px solid white;
+  box-shadow: 0 4px 6px #585858;
+  border-radius: 20px;
+  width: 50%;
+  height: 50%;
+}
+.contest-title {
+  margin-top: 50px;
+}
+.contest {
+  display: flex;
+  flex-direction: column;
+}
+.contest-container {
+  display: flex;
+  flex-direction: row;
+}
+.contest-item {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 50px 0 50px 30px;
+  background-color: #343434;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px #585858;
+}
+.contest-content {
+  margin-left: 10px;
+}
+.contest-content ul {
+  margin-bottom: 0;
+}
+.contest-content li {
+  padding: 20px 0;
+}
+.login {
+  color: white;
 }
